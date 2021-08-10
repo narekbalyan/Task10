@@ -1,4 +1,7 @@
+import dotenv from 'dotenv';
 import {MailOptions, authentication, Transport} from './interfaces'
+
+dotenv.config();
 
 export const options: MailOptions = {
     from: process.env.EMAIL,
